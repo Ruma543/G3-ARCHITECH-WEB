@@ -82,9 +82,12 @@ main{
     margin: 70px auto;
 }
 .list-feature{
+   width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 60px;
 }
 .img-section{
   display: grid;
@@ -112,25 +115,78 @@ font-weight: 700;
 }
 /* feature container style */
 .feature-container{
+  width: 80%;
+  margin: auto;
 display: flex;
 justify-content: space-around;
 align-items: center;
+gap: 70px;
+}
+.feature-content{
+  width: 50%;
+}
+.feature-card{
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+  /* padding: 10px;
+  margin: 10px; */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+.card-title{
+color: #131313;
+font-size:1.25rem;
+font-weight: 600;
+}
+.card-description{
+color: #727272;
+font-size: 1rem;
+font-weight: 400;
 }
 .feature-title{
   color: #131313;
-font-size: 45px;
+font-size: 2.5rem;
 font-weight: 700;
+border-left:5px solid #FF900E;
+padding-left: 30px;
 }
 .feature-description{
   color: #727272;
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400;
 }
-.feature-image{
- width: 700px;
+.feature-img{
+  width: 50%;
 }
+.feature-image{
+ width: 100%;
+ margin-left: 50px;
+}
+.ten-years{
+  background-color: #FF900E;
+  width: 40%;
+  text-align: center;
+  position: relative;
+  bottom: 70px;
+  border-radius: 8px;
+  padding: 20px;
+}
+.ten-years>h3{color: #FFF;
+font-size: 3rem;
+font-weight: 700;
+margin: 0;
+}
+.ten-years>p{
+  color: #FFF;
+font-size: 1.5rem;
+font-weight: 500;
+margin: 0;
+}
+
 /* facts style */
 .facts-container{
+   width: 80%;
+  margin: auto;
   padding: 30px;
 }
 .facts-title{
@@ -200,7 +256,8 @@ padding: 30px 40px;
   .nav-container,
   .list-feature,
   .facts-card-container,
-  .our-sponsor-img
+  .our-sponsor-img,
+.feature-container
   {
 flex-direction: column;
   }
@@ -221,6 +278,16 @@ flex-direction: column;
  .our-sponsor-img {
     gap: 20px;
   }
+  .feature-content{
+    width: 100%;
+  }
+  .feature-img{
+    width: 90%;
+    margin: auto;
+  }
+  .ten-years{
+    width: 90%;
+  }
   .footer-description{
     padding:30px ;
 margin: 50px ;
@@ -228,8 +295,9 @@ margin: 50px ;
 }
 /* tablet or medium devices */
 @media screen and (min-width:576px) and (max-width:960px){
-   .nav-container, .list-feature,
-  .our-sponsor-img {
+   .nav-container, .list-feature, 
+  .our-sponsor-img, 
+  .feature-container{
 flex-direction: column;
   }
   header,
@@ -243,6 +311,12 @@ flex-direction: column;
   .img-section{
   grid-template-columns:1fr;
 }
+.feature-content{
+    width: 100%;
+  }
+  .feature-img{
+    width: 100%;
+  }
  .footer-description{
     padding:30px ;
 margin: 50px ;
